@@ -1,5 +1,10 @@
 # TodoReact App
 
+## URL
+https://react-todo-38838.web.app
+
+![image](https://github.com/anupam-singh88/mern-todo-app/assets/89381022/84ec8288-0232-4f54-af94-3bad694e22d1)
+
 ## Description
 This project is a simple todo app created using React.js. It uses hooks like useState and useContext to avoid prop drilling. All the notes are stored in the local storage of the browser for persistence. The app is deployed on Firebase for easy access.
 
@@ -23,5 +28,4 @@ This project is a simple todo app created using React.js. It uses hooks like use
 5. Open your browser and go to `http://localhost:3000`.
 6. Use the application to manage your todo items.
 
-## URL
-https://react-todo-38838.web.app
+
