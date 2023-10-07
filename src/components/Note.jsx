@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useNoteContext } from '../context/NotesContext'
 import NoteItem from './NoteItem'
-
+import Loader from './Loader'
 export default function Note() {
-    const { notes, addNote, getNote, deleteNote, updateNote } = useNoteContext();
+    const { loading, notes, addNote, getNote, deleteNote, updateNote } = useNoteContext();
     const [note, setNote] = useState('')
     const [editBtn, setEditBtn] = useState(false)
     const [editedItem, setEditedItem] = useState(null);
@@ -56,7 +56,7 @@ export default function Note() {
     }
     useEffect(() => {
         getNote();
-    }, [notes])
+    }, [])
     return (
         <>
             <div className="noteContainer">
@@ -75,7 +75,7 @@ export default function Note() {
 
                     </form>
                 </div>
-
+                {loading && <Loader />}
                 {
                     notes.map((elm, index) => {
                         // console.log(elm)
