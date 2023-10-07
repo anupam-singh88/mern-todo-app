@@ -8,7 +8,8 @@ export const useNoteContext = () => {
 
 
 export const NotesProvider = (props) => {
-    const host = "http://localhost:3000";
+    // const host = "http://localhost:3000";
+    const host = "https://mern-todo-bacnkend.onrender.com";
     const notesInitial = [];
     const [notes, setNotes] = useState(notesInitial);
 
